@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMenuActivity"
+    >
+
+    <ImageView
+        android:id="@+id/bgmain"
+        android:layout_width="match_parent"
+        android:layout_height="773dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bgmain"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/menuList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Dishes Menu list"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@android:color/holo_orange_dark"
+        android:textSize="27dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menuList"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/starter_cat"
+            android:text="Starters"
+            android:background="@drawable/seatcolor"
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_cat"
+            android:text="Main Course"
+            android:layout_below="@+id/starter_cat"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/seatcolor"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sandwiches_cat"
+            android:text="Sandwiches"
+            android:background="@drawable/seatcolor"
+            android:layout_below="@+id/main_cat"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pizza_cat"
+            android:text="Pizzas"
+            android:background="@drawable/seatcolor"
+            android:layout_below="@+id/sandwiches_cat"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pasta_cat"
+            android:background="@drawable/seatcolor"
+            android:text="Pasta's"
+            android:layout_below="@+id/pizza_cat"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/beverg_cat"
+            android:text="Beverages"
+            android:background="@drawable/seatcolor"
+            android:layout_below="@+id/pasta_cat"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
